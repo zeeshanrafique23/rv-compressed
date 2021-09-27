@@ -1,0 +1,25 @@
+CAPI=2:
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+
+name: "::compressed_decoder:0.1"
+description: "Compressed instruction decoder for RV32I"
+filesets:
+  dec:
+    files:
+      - rtl/compressed_decoder.v
+    file_type: verilogSource
+
+targets:
+  default:
+    filesets: [dec]
+
+  lint:
+    default_tool : verilator
+    filesets : [dec]
+    tools:
+      verilator:
+        mode : lint-only
+        verilator_options:
+          - "-Wall"
+    toplevel : compressed_decoder

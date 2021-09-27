@@ -1,0 +1,2 @@
+# RV-compressed
+This design is taken from [lowrisc/ibex](https://github.com/lowrisc/ibex), it is seperated from ibex to use it easily as a stand-alone [RISC-V](https://riscv.org) standard compressed instruction extension using [FuseSoC](https://github.com/olofk/fusesoc). 
