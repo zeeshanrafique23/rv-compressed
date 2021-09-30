@@ -7,8 +7,7 @@
  * Compressed instruction decoder
  *
  * Decodes RISC-V compressed instructions into their RV32 equivalent.
- * This module is fully combinatorial, clock and reset are used for
- * assertions only.
+ * This module is fully combinatorial.
  */
 
 module compressed_decoder (
